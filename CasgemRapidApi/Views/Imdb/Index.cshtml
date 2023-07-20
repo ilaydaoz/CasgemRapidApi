@@ -1,0 +1,28 @@
+﻿@model List<ImdbMovieListViewModel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<link href ="~/lib/bootstrap/dist/css/bootstrap-grid.css" rel="stylesheet" />
+
+<div class="container">
+    <br /> <br />
+    <table class="table table-hover">
+        <tr>
+            <th>#</th>
+            <th>Film Adı</th>
+            <th>Film puanı</th>
+            <th>yapım yılı</th>
+        </tr>
+        @foreach (var item in Model)
+        {<tr>
+            <td>@item.rank</td>
+            <td>@item.title</td>
+            <td>@item.rating</td>
+            <td>@item.year</td>
+        </tr>
+        }
+    </table>
+
+</div>
+
