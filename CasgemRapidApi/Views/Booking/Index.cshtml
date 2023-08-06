@@ -1,0 +1,35 @@
+﻿@model List<HotelListModel.Result>
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+<form method="post">
+    <div class="row">
+        <div class="col-md-6 mb-2">
+            <input type="text" name="adult" class="form-control" placeholder="Yetişkin Sayısı" />
+        </div>
+        <br />
+        <div class="col-md-6 mb-2">
+            <input type="text" name="child" class="form-control" placeholder="Çocuk Sayısı" />
+        </div>
+        <br />
+        <div class="col-md-6 mb-2">
+            <input type="text" name="checkindate" class="form-control" placeholder="Giriş Tarihi" />
+        </div>
+        <br />
+        <div class="col-md-6 mb-2">
+            <input type="text" name="checkoutdate" class="form-control" placeholder="Çıkış Tarihi" />
+        </div>
+        <br />
+        <div class="col-md-6 mb-2">
+            <input type="text" name="roomnumber" class="form-control" placeholder="Oda Numarası" />
+        </div>
+        <br />
+        <div class="col-md-6 mb-2">
+            <input type="text" name="cityID" class="form-control" placeholder="Şehir ID" />
+        </div>
+        <button class="btn btn-primary">Otel Ara</button>
+    </div>
+</form>
+<table></table>
